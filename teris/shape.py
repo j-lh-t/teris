@@ -159,7 +159,6 @@ shape_colors = [(0, 255, 0), (255, 0, 0), (0, 255, 255), (255, 255, 0), (255, 16
 #?_Theo thứ tự các khối trong hình khối thì sẽ có màu tương ứng
 
 
-
 def convert_shape_format(shape): 
   positions = []
   format = shape.shape[shape.rotation % len(shape.shape)]

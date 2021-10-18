@@ -40,10 +40,7 @@ class Piece(object):  #?_Lớp này để chứa các thuộc tính của trò c
 
 #?_Lựa chọn khối bất kỳ và thả nó từ vị trí cột thứ 5 tại dòng đầu tiên
 def get_shape(): 
-  return Piece( shape=random.choice(shapes),
-                x=5, 
-                y=0
-              )
+  return Piece( shape=random.choice(shapes), x=5, y=0)
 
 #?_Phân vùng giới hạn cửa sổ game
 def check_lost(positions):
@@ -235,7 +232,7 @@ def main(win):  # *
 		if check_lost(locked_positions):
 			draw_text_middle(win, "THUA RỒI!", 80, (255,255,255))
 			pygame.display.update()
-			pygame.time.delay(1500)
+			pygame.time.delay(3000)
 			run = False
 
 
